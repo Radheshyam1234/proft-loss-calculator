@@ -24,7 +24,7 @@ function findProfitOrLoss(initialPrice,quantity,currentPrice)  {
      if (initialPrice > currentPrice){
 
             var loss=quantity*(initialPrice-currentPrice);
-            var lossPercent=(loss/(initialPrice*quantity))*100;
+            var lossPercent=(loss/(initialPrice))*100;
             
             output.style["background-color"] = "red";
 
@@ -34,7 +34,7 @@ function findProfitOrLoss(initialPrice,quantity,currentPrice)  {
             else if (currentPrice>initialPrice){
 
             var profit= quantity *(currentPrice-initialPrice)
-            var profitPercent=(profit/(initialPrice*quantity))*100;
+            var profitPercent=(profit/(initialPrice))*100;
             
              output.style["background-color"] = "green";
             showOutput(`😲😲😲😲The Profit amount is ${profit} and the profit percentage is ${profitPercent}%`);
